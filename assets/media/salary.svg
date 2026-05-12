@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
+  <path 
+    stroke="currentColor" 
+    stroke-miterlimit="10" 
+    stroke-width="1.25" 
+    d="M14 4.667H2V14h12z"
+  />
+  <path 
+    stroke="currentColor" 
+    stroke-miterlimit="10" 
+    stroke-width="1.25" 
+    d="M14 7.333h-2.666a2 2 0 0 0 0 4h2.667M11.334 9.333h.667M3.334 4.667 8.667 2l1.334 2.667M9.334 3.333l2-.666.667 2"
+  />
+</svg>

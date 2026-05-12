@@ -1,0 +1,40 @@
+:root {
+	--separator-icon: url("<?php echo get_theme_file_uri('/assets/media/compass-large.svg'); ?>");
+}
+
+.breadcrumb-dark .rank-math-breadcrumb,
+.breadcrumb-dark-no-bg .rank-math-breadcrumb {
+	@apply text-blue-dark;
+}
+
+.breadcrumb-dark .rank-math-breadcrumb .breadcrumbs-separator {
+	@apply bg-blue-dark;
+	&::after {
+		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='13' viewBox='0 0 14 13' fill='none'%3E%3Cpath d='M4.25447 6.61801L1.31055 10.2911L5.56669 8.2514L6.61405 12.8317L7.66545 8.2514L4.25447 6.61801ZM8.50859 4.58031L9.55999 0L6.61607 3.6731L8.97768 6.61801L13.2318 4.58031H8.51061H8.50859Z' fill='white'/%3E%3Cpath d='M11.9192 10.2911L3.66979 0L4.72523 4.58232L0 4.58031L11.9192 10.2911Z' fill='%2387BD25'/%3E%3C/svg%3E");
+	}
+}
+
+.breadcrumb-dark-no-bg .rank-math-breadcrumb .breadcrumbs-separator {
+	@apply bg-transparent;
+}
+
+.rank-math-breadcrumb {
+	@apply text-xs font-semibold text-white;
+
+	a:hover {
+		@apply underline;
+	}
+
+	.last {
+		@apply text-blue-light;
+	}
+
+	.breadcrumbs-separator {
+		@apply mx-1 inline-flex items-center justify-center rounded-full bg-white p-0.5 after:block after:h-3.5 after:w-3.5 after:bg-contain after:bg-center after:bg-no-repeat after:content-[''];
+		vertical-align: middle;
+
+		&::after {
+			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='68' height='68' fill='none' viewBox='0 0 68 68'%3E%3Cpath fill='%23222c78' d='M21.69 34.793 6.68 54.103l21.7-10.723 5.34 24.08 5.361-24.08zM43.38 24.08 48.741 0l-15.01 19.31 12.041 15.483 21.69-10.713H43.381'/%3E%3Cpath fill='%2387bd25' d='M60.772 54.103 18.71 0l5.381 24.09L0 24.08z'/%3E%3C/svg%3E");
+		}
+	}
+}

@@ -1,0 +1,31 @@
+.testimonial-slider {
+	@apply py-20;
+}
+
+.testimonial-slider .swiper-slide {
+	@apply transition-all duration-500 ease-in-out;
+}
+
+.testimonial-slider .swiper-slide[data-distance="0"] {
+	@apply z-30 -translate-y-10 rotate-0 opacity-100;
+}
+
+.testimonial-slider .swiper-slide[data-distance="-1"] {
+	@apply z-20 -translate-y-5 -rotate-3;
+}
+.testimonial-slider .swiper-slide[data-distance="1"] {
+	@apply z-20 -translate-y-5 rotate-3;
+}
+
+.testimonial-slider .swiper-slide[data-distance="-2"],
+.testimonial-slider .swiper-slide[data-distance="2"] {
+	@apply z-10 translate-y-5 -rotate-6;
+}
+.testimonial-slider .swiper-slide[data-distance="2"] {
+	@apply z-10 translate-y-5 rotate-6;
+}
+
+.testimonial-slider .swiper-slide[data-distance^="-3"],
+.testimonial-slider .swiper-slide[data-distance="3"] {
+	@apply z-0 translate-y-24;
+}

@@ -1,0 +1,143 @@
+form {
+  @apply -mt-4 grid gap-4;
+
+  .wpcf7-not-valid-tip {
+    @apply text-red mt-1 block text-sm;
+  }
+
+  .wpcf7-response-output {
+    @apply rounded-usp-md mt-4 block px-8 py-4;
+    footer & {
+      @apply bg-white/30 text-white;
+    }
+    &:not(footer &) {
+      @apply bg-blue text-white;
+    }
+    &:empty {
+      @apply hidden;
+    }
+  }
+
+  .form-row {
+    @apply flex w-full flex-col gap-4 lg:flex-row;
+  }
+
+  .form-group {
+    @apply flex w-full flex-col;
+
+    label {
+      @apply text-2xs mb-1.5 pl-5 font-semibold tracking-wider uppercase transition-colors;
+      footer & {
+        @apply text-white/60;
+      }
+      &:not(footer &) {
+        @apply text-black/60;
+      }
+    }
+
+    &.form-acceptance {
+      @apply flex-row items-start gap-3;
+      input {
+        @apply mt-1;
+      }
+      label {
+        @apply mb-0 cursor-pointer text-base font-normal normal-case;
+      }
+    }
+  }
+
+  input:not([type="submit"]),
+  textarea,
+  select {
+    @apply rounded-usp-md block w-full px-5 py-3 transition-all outline-none;
+
+    &::placeholder {
+      @apply text-black/30;
+      opacity: 1 !important;
+    }
+
+    footer & {
+      &::placeholder {
+        @apply text-white/30;
+      }
+    }
+
+    footer & {
+      @apply border border-transparent bg-white/10 font-normal text-white focus:border-white;
+      &.wpcf7-not-valid {
+        @apply border-red;
+      }
+    }
+
+    &:not(footer &) {
+      @apply bg-grey-light/80 border-none font-semibold text-black;
+
+      &:focus:not(.wpcf7-not-valid) {
+        @apply ring-green ring ring-offset-3 ring-offset-white;
+      }
+      &.wpcf7-not-valid {
+        @apply ring-red ring ring-offset-3 ring-offset-white;
+      }
+    }
+  }
+
+  input[type="checkbox"],
+  input[type="radio"] {
+    @apply rounded-usp-md checked:bg-green checked:border-green size-4 appearance-none border bg-transparent bg-center bg-no-repeat transition-all checked:bg-[url('../../assets/media/check.svg')];
+
+    footer & {
+      @apply border-white/30;
+    }
+    &:not(footer &) {
+      @apply border-black/20;
+    }
+  }
+
+  [type="submit"] {
+    @apply bg-green hover:bg-green-dark rounded-button flex w-max cursor-pointer items-center border border-transparent px-6 py-3.5 text-base leading-[normal] leading-none font-semibold text-white transition-colors;
+  }
+
+  .form-submit {
+    @apply relative flex justify-center;
+    &:has(.align-left) {
+      @apply justify-start;
+    }
+
+    .wpcf7-submit {
+      @apply bg-blue rounded-button relative flex items-center border border-transparent px-8 py-4 text-base leading-none font-semibold text-white transition-colors;
+      &::after {
+        @apply rounded-button pointer-events-none absolute inset-0 bg-black/5 opacity-0 transition-opacity content-[''];
+      }
+      &:hover::after {
+        @apply opacity-100;
+      }
+    }
+    .wpcf7-spinner {
+      @apply absolute top-[calc(50%-0.75rem)] left-[calc(50%-0.75rem)] size-6 animate-spin rounded-full border-2 border-t-white border-r-transparent border-b-white border-l-white opacity-0 before:content-none;
+    }
+    &:has(.wpcf7-submit[disabled]) {
+      .wpcf7-spinner {
+        @apply opacity-100;
+      }
+      .wpcf7-submit {
+        @apply pointer-events-none text-transparent;
+      }
+    }
+  }
+
+  .codedropz-upload-handler {
+    @apply rounded-xl border-black/30;
+    .codedropz-upload-container {
+      @apply p-8;
+      .codedropz-upload-inner {
+        h3 {
+          @apply text-1.2xs mb-2 font-semibold;
+        }
+      }
+    }
+  }
+}
+
+.wpcf7-form-control-wrap[data-name="phonenumber"] {
+  flex-grow: 1;
+}
