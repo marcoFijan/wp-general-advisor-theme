@@ -1,0 +1,137 @@
+{
+    "key": "group_69aeca3cdc8af",
+    "title": "Hero",
+    "fields": [
+        {
+            "key": "field_69aeca3cdd3f7",
+            "label": "Titel",
+            "name": "hero_title",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "allow_in_bindings": 0,
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_69aeca3cdd3fa",
+            "label": "Introductie tekst",
+            "name": "hero_txt",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "allow_in_bindings": 0,
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type_archive",
+                "operator": "==",
+                "value": "service"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "template-landingpage.php"
+            },
+            {
+                "param": "page",
+                "operator": "!=",
+                "value": "2"
+            }
+        ],
+        [
+            {
+                "param": "post_type_archive",
+                "operator": "==",
+                "value": "case"
+            }
+        ],
+        [
+            {
+                "param": "post_type_archive",
+                "operator": "==",
+                "value": "vacancy"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "template-werken-bij.php"
+            }
+        ],
+        [
+            {
+                "param": "post_type_archive",
+                "operator": "==",
+                "value": "sectors"
+            }
+        ],
+        [
+            {
+                "param": "post_type_archive",
+                "operator": "==",
+                "value": "video"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "knowledge"
+            }
+        ],
+        [
+            {
+                "param": "post_template",
+                "operator": "==",
+                "value": "template-legal.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "display_title": "Hero",
+    "allow_ai_access": false,
+    "ai_description": "",
+    "acfe_autosync": [
+        "json"
+    ],
+    "acfe_form": 0,
+    "acfe_meta": "",
+    "acfe_note": "",
+    "modified": 1775201545
+}

@@ -1,0 +1,64 @@
+{
+	"key": "group_69aae8aa98fe2",
+	"title": "Details - Veelgestelde vragen",
+	"fields": [
+		{
+			"key": "field_69aae8abb2766",
+			"label": "Relevante diensten",
+			"name": "services",
+			"aria-label": "",
+			"type": "relationship",
+			"instructions": "",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "",
+				"class": "",
+				"id": ""
+			},
+			"post_type": ["service"],
+			"post_status": ["publish"],
+			"taxonomy": "",
+			"filters": ["search", "post_type", "taxonomy"],
+			"return_format": "id",
+			"acfe_bidirectional": {
+				"acfe_bidirectional_enabled": "0"
+			},
+			"min": "",
+			"max": "",
+			"allow_in_bindings": 0,
+			"elements": "",
+			"bidirectional": 0,
+			"bidirectional_target": []
+		}
+	],
+	"location": [
+		[
+			{
+				"param": "post_type",
+				"operator": "==",
+				"value": "faq"
+			}
+		]
+	],
+	"menu_order": 0,
+	"position": "side",
+	"style": "default",
+	"label_placement": "top",
+	"instruction_placement": "label",
+	"hide_on_screen": "",
+	"active": true,
+	"description": "",
+	"show_in_rest": 0,
+	"display_title": "Details",
+	"acfe_autosync": ["json"],
+	"acfe_form": 0,
+	"acfe_meta": {
+		"acfcloneindex": {
+			"acfe_meta_key": "",
+			"acfe_meta_value": ""
+		}
+	},
+	"acfe_note": "",
+	"modified": 1772810438
+}

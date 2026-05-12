@@ -1,0 +1,67 @@
+{
+    "key": "group_69a6f7370e0a2",
+    "title": "Details - Pagina",
+    "fields": [
+        {
+            "key": "field_69a6f7370ecb1",
+            "label": "Toon contact slider boven de footer",
+            "name": "show_contact_marque",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "Selecteer wanneer je boven de footer de contact slider wilt tonen",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "allow_in_bindings": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "all"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "template-landingpage.php"
+            }
+        ],
+        [
+            {
+                "param": "post_type_archive",
+                "operator": "==",
+                "value": "all"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "display_title": "Footer",
+    "acfe_autosync": [
+        "json"
+    ],
+    "acfe_form": 0,
+    "acfe_meta": "",
+    "acfe_note": "",
+    "modified": 1773150344
+}

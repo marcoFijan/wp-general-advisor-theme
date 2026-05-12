@@ -1,0 +1,55 @@
+{
+    "key": "group_69ae9ed52141e",
+    "title": "Inhoud - Soort Dienst",
+    "fields": [
+        {
+            "key": "field_69ae9ed5f123d",
+            "label": "Tekst",
+            "name": "sub_services_intro",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "Introductie tekst voor alle subdiensten. Subdiensten onder deze dienst worden automatisch opgehaald",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "allow_in_bindings": 0,
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "taxonomy",
+                "operator": "==",
+                "value": "service_type"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "display_title": "Inhoud",
+    "allow_ai_access": false,
+    "ai_description": "",
+    "acfe_autosync": [
+        "json"
+    ],
+    "acfe_form": 0,
+    "acfe_meta": "",
+    "acfe_note": "",
+    "modified": 1774961337
+}
